@@ -10,17 +10,17 @@ It works with the Atmega328P-PU on power down mode. Brownout detector off (fuses
 
 The user must get only below 120uA with all the sensors and display sleeping. It is possible to get even lower, depending on your hardware. Without the MPU6050, HMC5883L and BMP180, the other pieces must use only 1.1uA. Please download also the other libraries:
 
-#include <LowPower.h>
-#include <I2Cdev.h> 
-#include <MPU6050.h>
-#include <U8glib.h> 
-#include <HMC5883L.h> 
-#include <Adafruit_BMP085.h> 
+- LowPower
+- I2Cdev
+- MPU6050
+- U8glib
+- HMC5883L
+- Adafruit_BMP085
 
 It also uses:
 
-#include <Wire.h> //comes with the Arduino IDE
-#include <avr/sleep.h> //comes with the Arduino IDE
-#include <avr/power.h> //comes with the Arduino IDE
-#include <avr/wdt.h> //comes with the Arduino IDE
-#include <EEPROM.h> //comes with the Arduino IDE
+- Wire //comes with the Arduino IDE
+- avr/sleep //comes with the Arduino IDE
+- avr/power //comes with the Arduino IDE
+- avr/wdt //comes with the Arduino IDE
+- EEPROM //comes with the Arduino IDE
