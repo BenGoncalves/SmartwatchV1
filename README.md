@@ -1,5 +1,8 @@
 # SmartwatchV1
 First version of my smartwatch project. Very early build.
+
+>> To get more information visit my blog > http://bengoncalves.net/
+
 It works with the Atmega328P-PU on power down mode. Brownout detector off (fuses off), and:
 - Oled I2C display (SSD1306);
 - MPU6050 Accelerometer and gyro;
