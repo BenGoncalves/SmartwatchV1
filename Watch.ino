@@ -137,6 +137,8 @@ void setup() {
   attachInterrupt(0, wakeUp, LOW);
   attachInterrupt(1, wakeUpMotion, LOW);
   setBrightness();
+
+  Serial.begin(9600);
   delay(100);
 }
 
@@ -230,6 +232,11 @@ void startsensors() {
 }
 
 void loop() {
+  if(interruptA){
+    interruptA = false;
+    Serial.print("Steps: ");
+    Serial.println(stepcount);
+  }
   while (BUTTON1 != 0) {
     setBrightness();
     u8g.firstPage();
